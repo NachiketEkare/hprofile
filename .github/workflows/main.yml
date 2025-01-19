@@ -7,6 +7,9 @@ jobs:
       - name: Testing workflow
         run: echo "workflow runs"
 
+      - name: Code checkout
+        run: actions/checkout@v4
+
       - name: Maven test
         run: mvn test
 
